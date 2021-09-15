@@ -5,12 +5,12 @@ describe('running basic tests', () => {
   let output
   test("should return ....", () => {
     inputStr = textToMorse("iii")
-    output = "......"
+    output = ".. .. .."
     expect(inputStr).toBe(output)
   })
   test("should return ....", () => {
     inputStr = textToMorse("hello")
-    output = "......-...-..---"
+    output = ".... . .-.. .-.. ---"
     expect(inputStr).toBe(output)
   })
 })
