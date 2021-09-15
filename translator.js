@@ -33,10 +33,10 @@ const textToMorse = (inputStr) => {
       if (morseCode[ele]) {
         return morseCode[ele]
       } else {
-        return '  '
+        return '   '
       }
   })
-  return arr2.join("")
+  return arr2.join(" ")
 }
 
 export default textToMorse
