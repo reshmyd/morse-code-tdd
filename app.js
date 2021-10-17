@@ -8,8 +8,8 @@ const convertBtn = document.querySelector(".convert-button")
 convertBtn.addEventListener('click', () => {
   const inputStr = inputElem.value
   if (/^[a-zA-Z\s]*$/.test(inputStr)) {
-    outputElem.value = textToMorse(inputStr)
+    outputElem.innerHTML = textToMorse(inputStr)
   } else {
-    outputElem.value = "Please enter string with letters only"
+    outputElem.innerHTML = "Please enter string with letters only"
   }
 })
