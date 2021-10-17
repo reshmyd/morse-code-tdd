@@ -14,8 +14,13 @@ body {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
+h1 {
+  margin: 100px;
+  font-size: 50px;
+}
+
 .container {
-  height: 80vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -27,6 +32,7 @@ body {
   width: 300px;
   background-color:#ebf8e1;
   border: none;
+  border-radius: 8px;
 }
 
 .output-box {
@@ -34,6 +40,7 @@ body {
   width: 300px;
   overflow: scroll;
   background-color:#ebf8e1;
+  border-radius: 8px;
 }
 
 button {
@@ -45,13 +52,18 @@ button {
   color: white;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
   body {
     padding: 5px;
+  }
+  h1 {
+    margin: 20px;
+    font-size: 36px;
   }
   .container {
     margin-top: 20px;
     flex-direction: column;
+    height: 60vh;
   }
   .input-box, .output-box {
     width: 200px;
